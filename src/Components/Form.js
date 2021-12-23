@@ -18,8 +18,8 @@ const Form = ({product, formNewProduct}) => {
             photography: null
         };
 
-        const requestPost = {url: "http://localhost:8080/api/product/new", method: "POST"};
-        const requestPut = {url: "http://localhost:8080/api/product/update", method: "PUT"};
+        const requestPost = {url: "http://144.22.239.221:8080/api/product/new", method: "POST"};
+        const requestPut = {url: "http://144.22.239.221:8080/api/product/update", method: "PUT"};
         const request = product === null?  requestPost : requestPut;
 
         const requestFetch = await fetch(request.url, {

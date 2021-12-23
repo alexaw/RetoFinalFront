@@ -6,14 +6,14 @@ const ProductList = ({setProduct,  products, setFormNewProduct}) => {
         const requestInit = {
             method: 'DELETE'
         };
-        fetch('http://localhost:8080/api/product/'+id, requestInit)
+        fetch('http://144.22.239.221:8080/api/product/'+id, requestInit)
         .then(res => setFormNewProduct(false))
         .catch(res => console.log(res))
     }
 
     let catchProduct = (product) => {
 
-        fetch('http://localhost:8080/api/product/'+ product)
+        fetch('http://144.22.239.221:8080/api/product/'+ product)
         .then(res => res.json())
         .then(res => {
             console.log(res);
