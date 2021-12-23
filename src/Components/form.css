@@ -1,0 +1,22 @@
+#product_form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background: rgba(106, 136, 245, 0.9);
+    text-align: center;
+    color: aliceblue;
+    align-content: center;
+}
+
+.input_product{
+    
+}
+
+#buttom_form{
+    background-color: rgb(62, 62, 179);
+    color: cornsilk;
+}
+
+#atribute_table{
+    background: rgba(106, 136, 245, 0.9);
+}
